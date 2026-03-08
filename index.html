@@ -1,9 +1,48 @@
-<section id="contact">
+<section class="contact-section">
     <h2>Contact Us</h2>
-    <p>If you have any questions, feel free to reach out!</p>
-    <div class="contact-buttons">
-        <a href="tel:+1234567890" class="btn-call">Call +1 234 567 890</a>
-        <a href="https://wa.me/1234567890" class="btn-whatsapp">WhatsApp</a>
-        <p>Phone: +1 234 567 890</p>
+    <div class="phone-display" style="display:none;">
+        <p>📱 Call: <a href="tel:07043438289">07043438289</a></p>
+    </div>
+    <div class="call-button-mobile" style="display:block;">
+        <a href="tel:07043438289" class="call-button">Call Us</a>
+    </div>
+    <div class="whatsapp-button">
+        <a href="https://wa.me/07043438289" class="whatsapp-link">WhatsApp</a>
     </div>
 </section>
+
+<style>
+.contact-section {
+    padding: 20px;
+    text-align: center;
+}
+.phone-display {
+    display: none;
+    margin: 10px 0;
+}
+.call-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.whatsapp-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .phone-display {
+        display: block;
+    }
+    .call-button-mobile {
+        display: none;
+    }
+}
+</style>
